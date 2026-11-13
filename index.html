@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priora – Privacy Policy</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f7fa;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #574964, #9F8383);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      opacity: 0.8;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #574964;
+      margin: 32px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #C8AAAA;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      font-size: 0.97rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #FFDAB3;
+      color: #574964;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    .highlight {
+      background: #fff;
+      border-left: 4px solid #574964;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #9F8383;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #574964;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PRIORA</h1>
+    <p>Privacy Policy &nbsp;•&nbsp; Effective Date: November 13, 2026</p>
+  </header>
+
+  <div class="container">
+
+    <div class="highlight">
+      Your privacy is important to us. This policy explains what information Priora collects,
+      how it is used, and your rights regarding your data.
+    </div>
+
+    <!-- 1 -->
+    <h2>1. About This App</h2>
+    <p>
+      <strong>Priora</strong> is a daily planner and productivity app that helps you manage tasks,
+      track goals, and stay focused using a Pomodoro timer. It works fully offline and optionally
+      syncs data to the cloud when you sign in with Google.
+    </p>
+    <ul>
+      <li><strong>Developer:</strong> Priora App</li>
+      <li><strong>Package:</strong> com.planner.priora</li>
+      <li><strong>Platform:</strong> Android</li>
+      <li><strong>Contact:</strong> <a
+          href="mailto:artcode.studio.business@gmail.com">artcode.studio.business@gmail.com</a></li>
+    </ul>
+
+    <!-- 2 -->
+    <h2>2. Information We Collect</h2>
+
+    <p><strong>A. Information You Provide</strong></p>
+    <ul>
+      <li>Task titles, descriptions, due dates, priorities, and categories</li>
+      <li>Sub-task content you create</li>
+      <li>Pomodoro session preferences</li>
+    </ul>
+
+    <p><strong>B. Google Account Information</strong> <span class="badge">Optional</span></p>
+    <p>
+      When you sign in with Google, we receive your:
+    </p>
+    <ul>
+      <li>Name and email address (for account identification only)</li>
+      <li>Google User ID (to associate your cloud data)</li>
+    </ul>
+    <p>Signing in is entirely optional. The app works fully without an account (Guest Mode).</p>
+
+    <p><strong>C. Usage & Crash Data</strong></p>
+    <ul>
+      <li>Crash reports and error logs (via Firebase Crashlytics) — anonymized stack traces</li>
+      <li>App usage events such as screens visited and features used (via Firebase Analytics)</li>
+      <li>Device type, OS version, and app version (automatically collected by Firebase)</li>
+    </ul>
+
+    <p><strong>D. Advertising Data</strong></p>
+    <ul>
+      <li>Advertising ID (Google Ad ID) — used by Google AdMob to serve relevant ads</li>
+      <li>IP address (collected by AdMob infrastructure for ad serving)</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To store and display your tasks on your device</li>
+      <li>To sync your tasks across devices when you are signed in</li>
+      <li>To send local notifications for scheduled task reminders</li>
+      <li>To detect and fix app crashes and bugs</li>
+      <li>To understand how the app is used and improve it</li>
+      <li>To display advertisements through Google AdMob</li>
+    </ul>
+
+    <!-- 4 -->
+    <h2>4. Data Storage</h2>
+    <div class="highlight">
+      <strong>Offline-First:</strong> All your tasks are stored locally on your device using
+      an encrypted local database (Hive). Your data is yours — it never leaves your device
+      unless you explicitly sign in with Google.
+    </div>
+    <ul>
+      <li><strong>Local storage:</strong> Hive database on your device</li>
+      <li><strong>Cloud storage (signed-in users only):</strong> Firebase Firestore, stored
+        under your unique user ID at path <code>users/{uid}/tasks/{taskId}</code></li>
+      <li>Signing out clears all local data from the device</li>
+    </ul>
+
+    <!-- 5 -->
+    <h2>5. Third-Party Services</h2>
+    <p>Priora uses the following third-party services, each with its own privacy policy:</p>
+    <ul>
+      <li>
+        <strong>Firebase (Google LLC)</strong> — Authentication, Cloud Firestore, Crashlytics, Analytics<br />
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
+      </li>
+      <li>
+        <strong>Google Sign-In</strong> — Account authentication<br />
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+      </li>
+      <li>
+        <strong>Google AdMob</strong> — In-app advertising<br />
+        <a href="https://support.google.com/admob/answer/6128543"
+          target="_blank">support.google.com/admob/answer/6128543</a>
+      </li>
+    </ul>
+
+    <!-- 6 -->
+    <h2>6. Advertising</h2>
+    <p>
+      Priora displays advertisements provided by <strong>Google AdMob</strong>. AdMob may use
+      your Advertising ID to show personalized ads based on your interests.
+    </p>
+    <ul>
+      <li>Ads appear as banners on the home screen and as full-screen interstitials</li>
+      <li>You can opt out of personalized ads in your device settings:
+        <strong>Settings → Google → Ads → Opt out of Ads Personalization</strong>
+      </li>
+      <li>We do not control the ads shown; AdMob's policies govern ad content</li>
+    </ul>
+
+    <!-- 7 -->
+    <h2>7. Notifications</h2>
+    <p>
+      Priora uses local notifications to remind you of scheduled tasks. These notifications are
+      generated entirely on your device — no data is sent to external servers for notification delivery.
+      You can disable notifications at any time in your device settings.
+    </p>
+
+    <!-- 8 -->
+    <h2>8. Children's Privacy</h2>
+    <p>
+      Priora is not directed to children under the age of 13. We do not knowingly collect personal
+      information from children under 13. If you believe a child has provided us with personal
+      information, please contact us and we will delete it.
+    </p>
+
+    <!-- 9 -->
+    <h2>9. Your Rights & Choices</h2>
+    <ul>
+      <li><strong>Access your data:</strong> All task data is visible inside the app</li>
+      <li><strong>Delete your data:</strong> Sign out of the app to clear all local data;
+        contact us to delete cloud data permanently</li>
+      <li><strong>Opt out of analytics:</strong> You can disable Firebase Analytics by
+        contacting us or uninstalling the app</li>
+      <li><strong>Opt out of personalized ads:</strong> Via Android device settings</li>
+      <li><strong>Use without an account:</strong> Guest Mode keeps all data local only</li>
+    </ul>
+
+    <!-- 10 -->
+    <h2>10. Data Security</h2>
+    <p>
+      We take reasonable measures to protect your information. Firebase services use
+      industry-standard encryption in transit (TLS) and at rest. Firestore Security Rules
+      ensure that only you can access your own data.
+    </p>
+
+    <!-- 11 -->
+    <h2>11. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Changes will be posted on this page
+      with an updated effective date. Continued use of the app after changes constitutes
+      acceptance of the updated policy.
+    </p>
+
+    <!-- 12 -->
+    <h2>12. Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, please contact us at:<br />
+      📧 <a href="mailto:artcode.studio.business@gmail.com">artcode.studio.business@gmail.com</a>
+    </p>
+
+    <footer>
+      <p>© 2026 Priora App. All rights reserved.</p>
+      <p style="margin-top:6px;">Last updated: November 13, 2026</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
